@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2a2323;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.covidData {
+    width: 100%;
+    max-width: 700px;
+}
+
+.covidData__input input {
+    width: 100%;
+    display: block;
+    background-color: rgb(124, 38, 38);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.covidData__input input::placeholder {
+    color: #bbb;
+}
+
+.covidData__input input:focus {
+    outline: none;
+}
+
+.covidData__input button {
+    background-color:rgb(124, 38, 38);
+    border: none;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    transition: 1s ease;
+}
+
+.covidData__input button:hover {
+    background-color:rgb(124, 38, 38);
+    box-shadow: 0 4px 8px 0 rgba(255, 132, 132, 0.7), 0 6px 20px 0 rgba(255, 0, 0, 0.7);
+}
+
+.covidData__country__info {
+    max-width: 800px;
+    background-color:rgb(124, 38, 38);
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+}
+
+.covidData__country__info p {
+    color: #eee;
+}
+
+@media (max-width: 500px) {
+    .covidData__country__info {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .covidData {
+        max-width: 400px;
+    }
+}
